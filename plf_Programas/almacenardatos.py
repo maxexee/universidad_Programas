@@ -1,6 +1,6 @@
 
 def edi(nom,    tel):
-    file_d  =   open('/home/maxexee/Documents/Universidad/PLF/Tema_3/msidatos.txt','a')
+    file_d  =   open('/home/maxexee/Documents/Universidad/universidad_Programas/plf_Programas/msidatos.txt','a')
     file_d.write(nom)
     file_d.write(',')
     file_d.write(tel)
@@ -11,19 +11,19 @@ def edi(nom,    tel):
     menu()
 
 def file_m():
-    file_r  =   open('/home/maxexee/Documents/Universidad/PLF/Tema_3/msidatos.txt','r')
+    file_r  =   open('/home/maxexee/Documents/Universidad/universidad_Programas/plf_Programas/msidatos.txt','r')
     return  file_r.read()
 
 def file_b1(numb):
     
-    file_r  =   open('/home/maxexee/Documents/Universidad/PLF/Tema_3/msidatos.txt','r')
+    file_r  =   open('/home/maxexee/Documents/Universidad/universidad_Programas/plf_Programas/msidatos.txt','r')
     L    =   file_r.readlines()
     numL =  len(L)
     file_r.close()
 
     del L[numb]
 
-    line_n  =   open('/home/maxexee/Documents/Universidad/PLF/Tema_3/msidatos.txt','w')
+    line_n  =   open('/home/maxexee/Documents/Universidad/universidad_Programas/plf_Programas/msidatos.txt','w')
 
     line    =   0
     while   line    <   numL:
