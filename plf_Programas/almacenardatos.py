@@ -15,22 +15,24 @@ def file_m():
     return  file_r.read()
 
 def file_b1(numb):
-    
-    file_r  =   open('/home/maxexee/Documents/Universidad/universidad_Programas/plf_Programas/msidatos.txt','r')
-    L    =   file_r.readlines()
-    numL =  len(L)
-    file_r.close()
+    try:
+        file_r  =   open('/home/maxexee/Documents/Universidad/universidad_Programas/plf_Programas/msidatos.txt','r')
+        L    =   file_r.readlines()
+        numL =  len(L)
+        file_r.close()
 
-    del L[numb]
+        del L[numb]
 
-    line_n  =   open('/home/maxexee/Documents/Universidad/universidad_Programas/plf_Programas/msidatos.txt','w')
+        line_n  =   open('/home/maxexee/Documents/Universidad/universidad_Programas/plf_Programas/msidatos.txt','w')
 
-    line    =   0
-    while   line    <   numL:
-        line_n.write(L[line])
-        line    +=  1
+        line    =   0
+        while   line    <   numL-1:
+            line_n.write(L[line])
+            line    +=  1
 
-    line_n.close()
+        line_n.close()
+    except  Exception   as  e:
+        print(e)
 
     menu()
 
