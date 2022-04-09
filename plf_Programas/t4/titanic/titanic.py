@@ -1,6 +1,6 @@
-from inspect import stack
 import  pandas  as  pd
 import  matplotlib.pyplot  as  plt
+#https://github.com/maxexee/universidad_Programas/tree/master/plf_Programas
 
 df  =   pd.read_csv('/home/maxexee/Documents/Universidad/universidad_Programas/plf_Programas/t4/titanic/titanic.csv')
 

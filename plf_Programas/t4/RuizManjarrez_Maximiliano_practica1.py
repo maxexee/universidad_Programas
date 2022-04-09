@@ -1,7 +1,8 @@
 import  numpy as np
 import  matplotlib.pylab as plt
+#https://github.com/maxexee/universidad_Programas/tree/master/plf_Programas
 
-'''def h(x):
+def h(x):
     return  np.sin(x)
 
 x   =   np.linspace(0,  10, 100)
@@ -11,7 +12,7 @@ plt.xlabel('Tiempo')
 plt.ylabel('Posición')
 plt.title('Función de seno')
 plt.plot(x, h(x),    'r--', label='seno')
-#plt.show()'''
+plt.show()
 
 x   =   np.linspace(0,  10, 100)
 
